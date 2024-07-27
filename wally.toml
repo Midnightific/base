@@ -1,0 +1,14 @@
+[package]
+name = "midnightific/base"
+description = "Base modules for game development on Roblox"
+license = "MIT"
+realm = "shared"
+registry = "https://github.com/UpliftGames/wally-index"
+version = "1.0.0"
+exclude = [
+	".gitignore",
+    "tests",
+    "aftman.toml",
+    "dev.project.json",
+    "wally.lock"
+]
