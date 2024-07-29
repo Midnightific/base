@@ -1,6 +1,6 @@
 {
   "name": "base",
   "tree": {
-    "$path": "src/base.luau"
+    "$path": "src"
   }
 }

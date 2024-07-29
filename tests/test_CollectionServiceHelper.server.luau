@@ -8,8 +8,7 @@
 local CollectionService = game:GetService("CollectionService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local CollectionServiceHelper =
-	require(ReplicatedStorage:WaitForChild("base"):WaitForChild("base")).CollectionServiceHelper
+local CollectionServiceHelper = require(ReplicatedStorage:WaitForChild("base")).CollectionServiceHelper
 
 --// Functions
 

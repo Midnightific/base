@@ -5,7 +5,7 @@
 
 --// Initialization
 
-local ServiceHelpers = script.Parent:WaitForChild("ServiceHelpers")
+local ServiceHelpers = script:WaitForChild("ServiceHelpers")
 
 return table.freeze({
 	CollectionServiceHelper = require(ServiceHelpers:WaitForChild("CollectionServiceHelper")),
