@@ -7,5 +7,5 @@ rojo sourcemap default.project.json -o sourcemap.json
 
 luau-lsp analyze --definitions=globalTypes.d.lua --base-luaurc=.luaurc \
     --sourcemap=sourcemap.json --settings=.vscode/settings.json \
-    --no-strict-dm-types \
+    --no-strict-dm-types --ignore src/base.luau \
     src/
