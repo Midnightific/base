@@ -4,3 +4,9 @@
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock
+
+sourcemap.json
+**/sourcemap.json
+dist/
+globalTypes.d.lua
+**/globalTypes.d.lua

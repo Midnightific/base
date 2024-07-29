@@ -4,5 +4,5 @@ registry = "test"
 
 [[package]]
 name = "midnightific/base"
-version = "1.0.1"
+version = "1.0.2"
 dependencies = []

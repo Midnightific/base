@@ -4,7 +4,7 @@
     "$className": "DataModel",
 
     "ReplicatedStorage": {
-      "midnight_base": {
+      "base": {
         "$path": "src"
       }
     },
