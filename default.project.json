@@ -1,0 +1,12 @@
+{
+  "name": "midnight_base",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+        "Base": {
+            "$path": "src"
+        }
+    }
+  }
+}
