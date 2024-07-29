@@ -1,6 +1,6 @@
 {
-  "name": "midnight_base",
-  	"tree": {
-		"$path": "src"
-	}
+  "name": "base",
+  "tree": {
+    "$path": "src"
+  }
 }
