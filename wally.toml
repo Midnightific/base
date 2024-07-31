@@ -11,4 +11,5 @@ exclude = [
     "aftman.toml",
     "dev.project.json",
     "wally.lock"
+    docs
 ]

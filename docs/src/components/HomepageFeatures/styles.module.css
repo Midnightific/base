@@ -1,0 +1,69 @@
+.features {
+  display: flex;
+  justify-content: center;
+  /* Center the cards horizontally */
+  align-items: center;
+  /* Center the cards vertically */
+  flex-wrap: wrap;
+  /* Allow the cards to wrap to the next line if necessary */
+  gap: 30px;
+  /* Add some space between the cards */
+  padding: 20px;
+  /* Add some padding around the container */
+}
+
+.featureCard {
+  background-color: #ffffff;
+  /* White background for a cleaner look */
+  border-radius: 12px;
+  /* Slightly more rounded corners */
+  padding: 20px;
+  /* Padding inside the card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Slightly larger shadow */
+  margin: 15px 0;
+  /* Increased margin between cards */
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  /* Light border */
+  overflow: hidden;
+  /* Ensure content doesn't overflow */
+  width: 300px;
+  /* Set a fixed width for the cards */
+  display: flex;
+  /* Use Flexbox for the card content */
+  flex-direction: column;
+  /* Arrange content in a column */
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+  text-align: center;
+  /* Center text horizontally */
+}
+
+.featureCard:hover {
+  transform: translateY(-10px);
+  /* Lift the card more on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  /* Enhance shadow on hover */
+  border-color: #b0b0b0;
+  /* Darken the border on hover */
+}
+
+.featureCard h3 {
+  font-size: 1.5em;
+  /* Larger heading */
+  margin-bottom: 10px;
+  /* Space below heading */
+  color: #333;
+  /* Darker text color */
+}
+
+.featureCard p {
+  font-size: 1em;
+  /* Standard paragraph size */
+  color: #666;
+  /* Lighter text color */
+  line-height: 1.6;
+  /* Better line spacing */
+}
