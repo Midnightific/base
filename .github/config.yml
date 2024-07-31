@@ -1,0 +1,14 @@
+newIssueWelcomeComment: >
+  Thanks for opening an issue! Please make sure you have provided the following information so we can help you as best we can:
+
+  - [ ] A descriptive title
+  - [ ] A descriptive explanation of the problem
+  - [ ] Steps to reproduce the problem
+  - [ ] What you expected to happen
+  - [ ] What actually happened
+  - [ ] Any other relevant information
+
+  If you have any questions, please feel free to ask them in this issue.
+
+newPRWelcomeComment: >
+  Thanks for opening a pull request! Please make sure that you have checked all the boxes and provided all information required!
