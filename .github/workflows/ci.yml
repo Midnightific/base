@@ -45,6 +45,13 @@ jobs:
           args: --check src
         continue-on-error: true
 
+      - name: Fix code style issues
+        uses: JohnnyMorganz/stylua-action@v4
+        with:
+          token: ${{ github.token }}
+          version: latest
+          args: src
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
