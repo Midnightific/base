@@ -44,9 +44,17 @@ jobs:
           version: latest
           args: --check src
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Fix code style issues
+        uses: JohnnyMorganz/stylua-action@v4
         with:
-          commit_message: "style: fix code style issues"
+          token: ${{ github.token }}
+          version: latest
+          args: src
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "[auto]: fix code style issues"
           commit_options: "--no-verify"
           branch: ${{ github.head_ref }}
           commit_user_name: ${{ github.actor }}
