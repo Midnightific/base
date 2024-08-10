@@ -28,9 +28,14 @@ jobs:
   style:
     name: Styling
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
       - name: Check code style
         uses: JohnnyMorganz/stylua-action@v4
@@ -38,3 +43,17 @@ jobs:
           token: ${{ github.token }}
           version: latest
           args: --check src
+        continue-on-error: true
+
+      - name: Fix code style issues
+        uses: JohnnyMorganz/stylua-action@v4
+        with:
+          token: ${{ github.token }}
+          version: latest
+          args: src
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "[auto]: fix code style issues"
+          branch: ${{ github.head_ref }}
